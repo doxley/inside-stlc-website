@@ -31,7 +31,7 @@ export default function ResourceCard({
         className="btn-outline btn-sm justify-center"
       >
         <Download size={14} />
-        Download
+        Get it free
       </a>
     </div>
   );

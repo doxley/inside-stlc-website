@@ -1,44 +1,44 @@
 export const freeResources = [
   {
-    title: "QA Interview Playbook",
+    title: "The QA Interview Playbook: How I Hire",
     description:
-      "A comprehensive guide to preparing for QA and software testing interviews. Covers common questions, how to answer them, and what interviewers really look for.",
-    href: "https://www.insidestlcacademy.com/", // TODO: link to final resource URL
+      "An inside look at how a hiring manager actually evaluates QA candidates — the questions, the signals, and what separates a strong tester from the rest.",
+    href: "https://inside-stlc.kit.com/2f9fad7ca0",
+    badge: "Free Playbook",
+  },
+  {
+    title: "AI Workflow Prompt Pack for QA Engineers",
+    description:
+      "A ready-to-use pack of AI prompts for testers — accelerate test design, data, documentation and analysis with practical, QA-specific workflows. 2026 edition.",
+    href: "https://inside-stlc.kit.com/6418453f2f",
+    badge: "Free Prompt Pack",
+  },
+  {
+    title: "Beginner's Guide to Software Testing",
+    description:
+      "A step-by-step roadmap into software testing for complete beginners and career changers — clear, practical and no prior experience needed.",
+    href: "https://inside-stlc.kit.com/526d2a37bd",
     badge: "Free Guide",
   },
   {
-    title: "Beginner's Guide to AI in QA",
+    title: "90-Day Software Testing Career Roadmap",
     description:
-      "Understand how AI is changing software testing and what testers need to know. Practical, jargon-free and beginner-friendly.",
-    href: "https://www.insidestlcacademy.com/", // TODO: link to final resource URL
+      "A practical, week-by-week roadmap for your first 90 days in a testing role — what to learn, build and prove to level up fast.",
+    href: "https://inside-stlc.kit.com/e15eedb3fd",
+    badge: "Free Roadmap",
+  },
+  {
+    title: "QA Interview Guide 2026",
+    description:
+      "The top mistakes candidates make in QA interviews — and exactly what hiring managers actually want to hear instead. Updated for 2026.",
+    href: "https://inside-stlc.kit.com/bc0e8592f3",
     badge: "Free Guide",
   },
   {
-    title: "Introduction to Testing",
+    title: "Which QA Skill Will Matter Most in 2027?",
     description:
-      "A structured beginner series covering the fundamentals of software testing — ideal for career changers or developers wanting to understand QA.",
-    href: "https://www.insidestlcacademy.com/", // TODO: link to final resource URL
-    badge: "Free Course",
-  },
-  {
-    title: "Write Great Test Cases",
-    description:
-      "Learn how to write clear, effective test cases your whole team can understand. Includes templates and real examples.",
-    href: "https://www.insidestlcacademy.com/", // TODO: link to final resource URL
-    badge: "Free Guide",
-  },
-  {
-    title: "90-Day QA Roadmap",
-    description:
-      "A practical, week-by-week roadmap for testers starting a new role or levelling up their skills. Actionable and realistic.",
-    href: "https://www.insidestlcacademy.com/", // TODO: link to final resource URL
-    badge: "Free Guide",
-  },
-  {
-    title: "Test Automation Starter Checklist",
-    description:
-      "A practical checklist for teams considering automation — what to have in place before investing in tooling and frameworks.",
-    href: "https://www.insidestlcacademy.com/", // TODO: link to final resource URL
-    badge: "Free Checklist",
+      "A short, forward-looking read on the QA skills set to matter most as AI reshapes testing — and how to start building them now.",
+    href: "https://inside-stlc.kit.com/e6a9a65e6e",
+    badge: "Free Read",
   },
 ];
