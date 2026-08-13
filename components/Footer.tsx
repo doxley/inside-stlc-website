@@ -47,6 +47,7 @@ export default function Footer() {
               <li><Link href="/automation-capability" className="hover:text-white transition-colors">Automation Capability</Link></li>
               <li><Link href="/ai-for-qa" className="hover:text-white transition-colors">AI for QA</Link></li>
               <li><Link href="/consulting#engagements" className="hover:text-white transition-colors">Engagements</Link></li>
+              <li><Link href="/clients" className="hover:text-white transition-colors">Clients</Link></li>
               <li><Link href="/contact" className="hover:text-white transition-colors">Book a Discovery Call</Link></li>
             </ul>
           </div>

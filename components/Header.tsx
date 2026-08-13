@@ -9,6 +9,7 @@ const navLinks = [
   { href: "/consulting", label: "Consulting" },
   { href: "/automation-capability", label: "Automation Capability" },
   { href: "/ai-for-qa", label: "AI for QA" },
+  { href: "/clients", label: "Clients" },
   { href: "/academy", label: "Academy" },
   { href: "/resources", label: "Resources" },
   { href: "/contact", label: "Contact" },
