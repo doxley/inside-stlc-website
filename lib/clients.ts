@@ -23,26 +23,8 @@ export interface Client {
 
 export const clients: Client[] = [
   {
-    slug: "vivedia",
-    name: "Vivedia",
-    monogram: "V",
-    sector: "Digital Services",
-    period: "Inside STLC engagement",
-    role: "Test Automation Capability",
-    summary:
-      "A dedicated Inside STLC engagement to build sustainable test automation capability the team could own and grow.",
-    involved: [
-      "Discovery and automation capability assessment",
-      "A pragmatic automation framework and tooling approach",
-      "Pilot built with the team on real, high-risk journeys",
-      "Hands-on coaching and handover — capability, not dependency",
-    ],
-    tags: ["Automation Capability", "Discovery", "Coaching"],
-    accent: "green",
-    featured: true,
-  },
-  {
     slug: "staffline",
+    logo: "/clients/staffline.png",
     name: "Staffline",
     monogram: "S",
     sector: "Recruitment & Workforce",
@@ -61,6 +43,7 @@ export const clients: Client[] = [
   },
   {
     slug: "lexisnexis-risk",
+    logo: "/clients/lexisnexis-risk.png",
     name: "LexisNexis Risk",
     monogram: "LN",
     sector: "Risk, Data & Analytics",
@@ -79,6 +62,7 @@ export const clients: Client[] = [
   },
   {
     slug: "informed-solutions",
+    logo: "/clients/informed-solutions.png",
     name: "Informed Solutions",
     monogram: "IS",
     sector: "Public Sector Digital",
@@ -97,6 +81,7 @@ export const clients: Client[] = [
   },
   {
     slug: "dwp",
+    logo: "/clients/dwp.png",
     name: "Dept. for Work & Pensions",
     monogram: "DWP",
     sector: "Central Government",
@@ -115,6 +100,7 @@ export const clients: Client[] = [
   },
   {
     slug: "evri",
+    logo: "/clients/evri.png",
     name: "Evri",
     monogram: "E",
     sector: "Logistics & Delivery",
@@ -132,6 +118,7 @@ export const clients: Client[] = [
   },
   {
     slug: "sky-betting-gaming",
+    logo: "/clients/sky-betting-gaming.png",
     name: "Sky Betting & Gaming",
     monogram: "SB",
     sector: "Gaming & Betting (Regulated)",

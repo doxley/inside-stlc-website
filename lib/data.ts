@@ -1,5 +1,40 @@
 export const freeResources = [
   {
+    title: "Playwright Framework Health Check 2026",
+    description:
+      "A practical checklist to audit your Playwright automation framework — structure, stability, coverage and CI health — and spot what's quietly slowing your team down.",
+    href: "https://inside-stlc.kit.com/f0898b9046",
+    badge: "Free Checklist",
+  },
+  {
+    title: "Automation Decision Checklist 2026",
+    description:
+      "Decide what's actually worth automating. A clear, criteria-based checklist to prioritise the right tests and avoid costly automation that never pays off.",
+    href: "https://inside-stlc.kit.com/ce500bac35",
+    badge: "Free Checklist",
+  },
+  {
+    title: "How to Become a Software Tester (Zero Experience)",
+    description:
+      "A no-experience-needed guide to breaking into software testing — the skills to build, the myths to ignore, and the first steps that actually get you hired.",
+    href: "https://inside-stlc.kit.com/018a6af5b9",
+    badge: "Free Guide",
+  },
+  {
+    title: "Is QA Automation Still Worth It in 2026?",
+    description:
+      "An honest look at where test automation still pays off in 2026 — what to automate, what to leave manual, and how AI is shifting the balance.",
+    href: "https://inside-stlc.kit.com/c15342964d",
+    badge: "Free Read",
+  },
+  {
+    title: "I Hired QA Engineers for 25 Years — Here's What Made Me Say Yes",
+    description:
+      "The signals a hiring manager of 25 years actually looks for in QA candidates — what earns a yes, and what quietly ends an interview.",
+    href: "https://inside-stlc.kit.com/78f6e82f99",
+    badge: "Free Read",
+  },
+  {
     title: "The QA Interview Playbook: How I Hire",
     description:
       "An inside look at how a hiring manager actually evaluates QA candidates — the questions, the signals, and what separates a strong tester from the rest.",

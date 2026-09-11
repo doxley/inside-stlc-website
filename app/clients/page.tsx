@@ -7,7 +7,8 @@ import {
   ShieldCheck,
   Quote,
 } from "lucide-react";
-import { clients, clientSectors, type Client } from "@/lib/clients";
+import { clients, clientSectors } from "@/lib/clients";
+import ClientLogoTile from "@/components/ClientLogoTile";
 
 export const metadata: Metadata = {
   title: "Clients — QA & Test Delivery Track Record",
@@ -17,39 +18,6 @@ export const metadata: Metadata = {
 
 const featured = clients.find((c) => c.featured);
 const rest = clients.filter((c) => !c.featured);
-
-/* A branded logo tile — real logo image if provided, else a styled wordmark. */
-function LogoTile({ c }: { c: Client }) {
-  return (
-    <div className="group flex items-center gap-3.5 px-5 py-4 bg-navy-950 min-h-[84px]">
-      {c.logo ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          src={c.logo}
-          alt={`${c.name} logo`}
-          className="max-h-9 w-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity"
-        />
-      ) : (
-        <>
-          <span
-            className="grid place-items-center flex-shrink-0 h-10 min-w-10 px-2 rounded-lg text-sm font-black text-white"
-            style={{
-              background:
-                c.accent === "green"
-                  ? "linear-gradient(135deg, var(--green), #0e9e77)"
-                  : "linear-gradient(135deg, var(--blue), #1d4ed8)",
-            }}
-          >
-            {c.monogram}
-          </span>
-          <span className="text-[0.95rem] font-semibold text-white leading-tight tracking-tight">
-            {c.name}
-          </span>
-        </>
-      )}
-    </div>
-  );
-}
 
 export default function ClientsPage() {
   return (
@@ -91,7 +59,7 @@ export default function ClientsPage() {
             style={{ background: "var(--line)" }}
           >
             {clients.map((c) => (
-              <LogoTile key={c.slug} c={c} />
+              <ClientLogoTile key={c.slug} c={c} />
             ))}
           </div>
           <p className="mt-5 text-center text-sm text-dim max-w-2xl mx-auto leading-relaxed">
