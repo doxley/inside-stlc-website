@@ -24,7 +24,7 @@ export interface Client {
 export const clients: Client[] = [
   {
     slug: "staffline",
-    logo: "/clients/staffline.png",
+    logo: "/clients/staffline.jpg",
     name: "Staffline",
     monogram: "S",
     sector: "Recruitment & Workforce",
@@ -43,7 +43,7 @@ export const clients: Client[] = [
   },
   {
     slug: "lexisnexis-risk",
-    logo: "/clients/lexisnexis-risk.png",
+    logo: "/clients/lexisnexis-risk.jpg",
     name: "LexisNexis Risk",
     monogram: "LN",
     sector: "Risk, Data & Analytics",
@@ -62,7 +62,7 @@ export const clients: Client[] = [
   },
   {
     slug: "informed-solutions",
-    logo: "/clients/informed-solutions.png",
+    logo: "/clients/informed-solutions.jpg",
     name: "Informed Solutions",
     monogram: "IS",
     sector: "Public Sector Digital",
@@ -81,7 +81,7 @@ export const clients: Client[] = [
   },
   {
     slug: "dwp",
-    logo: "/clients/dwp.png",
+    logo: "/clients/dwp.svg",
     name: "Dept. for Work & Pensions",
     monogram: "DWP",
     sector: "Central Government",
