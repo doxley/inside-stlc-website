@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Inside STLC Academy | QA Training & Team Upskilling",
   description:
     "Inside STLC Academy gives teams structured QA learning pathways — software testing fundamentals, AI for QA, interview preparation and modern test automation — supporting the consultancy offer.",
+  alternates: { canonical: "/academy" },
 };
 
 const pathways = [

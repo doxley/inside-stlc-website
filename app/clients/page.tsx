@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   title: "Clients — QA & Test Delivery Track Record",
   description:
     "Organisations Inside STLC has delivered software testing, QA leadership and test automation for — across government, finance, gaming, logistics and public-sector digital.",
+  alternates: { canonical: "/clients" },
 };
 
 const featured = clients.find((c) => c.featured);
@@ -37,7 +38,7 @@ export default function ClientsPage() {
           <p className="mt-6 text-lg text-muted leading-relaxed">
             Across government, finance, gaming, logistics and public-sector
             digital, Inside STLC has led QA, test management and automation on
-            complex, high-risk programmes — backed by 20+ years of hands-on
+            complex, high-risk programmes — backed by 26+ years of hands-on
             delivery.
           </p>
           <div className="mt-8">
@@ -95,7 +96,7 @@ export default function ClientsPage() {
                 <div className="flex items-center gap-3 mb-5">
                   <span
                     className="grid place-items-center h-12 min-w-12 px-2.5 rounded-xl text-lg font-black text-white"
-                    style={{ background: "linear-gradient(135deg, var(--green), #0e9e77)" }}
+                    style={{ background: "linear-gradient(135deg, #cf981c, #9a6f12)" }}
                   >
                     {featured.monogram}
                   </span>
@@ -154,8 +155,8 @@ export default function ClientsPage() {
                     style={{
                       background:
                         c.accent === "green"
-                          ? "linear-gradient(135deg, var(--green), #0e9e77)"
-                          : "linear-gradient(135deg, var(--blue), #1d4ed8)",
+                          ? "linear-gradient(135deg, #cf981c, #9a6f12)"
+                          : "linear-gradient(135deg, #109a79, #0b6d54)",
                     }}
                   >
                     {c.monogram}

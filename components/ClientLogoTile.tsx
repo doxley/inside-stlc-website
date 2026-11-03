@@ -33,8 +33,8 @@ export default function ClientLogoTile({ c }: { c: Client }) {
             style={{
               background:
                 c.accent === "green"
-                  ? "linear-gradient(135deg, var(--green), #0e9e77)"
-                  : "linear-gradient(135deg, var(--blue), #1d4ed8)",
+                  ? "linear-gradient(135deg, #cf981c, #9a6f12)"
+                  : "linear-gradient(135deg, #109a79, #0b6d54)",
             }}
           >
             {c.monogram}

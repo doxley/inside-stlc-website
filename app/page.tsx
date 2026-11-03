@@ -176,6 +176,9 @@ export default function HomePage() {
               delivery risk, build sustainable test automation capability, and
               develop the testing skills needed for modern delivery.
             </p>
+            <p className="mt-5 text-base font-semibold tracking-wide" style={{ color: "var(--gold)" }}>
+              Test Smarter. Grow Faster.
+            </p>
             <div className="mt-9 flex flex-col sm:flex-row gap-4">
               <Link href="/contact" className="btn-primary">
                 Book a QA Discovery Call <ArrowRight size={16} />

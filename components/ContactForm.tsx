@@ -3,8 +3,8 @@ import { useState } from "react";
 import { Send, AlertCircle } from "lucide-react";
 
 const fieldClass =
-  "w-full px-4 py-3 rounded-lg text-sm bg-white/5 border border-line text-white placeholder:text-dim focus:outline-none focus:border-blue-400 focus:ring-2 transition";
-const ringStyle = { "--tw-ring-color": "rgba(47,107,255,0.35)" } as React.CSSProperties;
+  "w-full px-4 py-3 rounded-lg text-sm bg-white/5 border border-line text-white placeholder:text-dim focus:outline-none focus:border-teal-400 focus:ring-2 transition";
+const ringStyle = { "--tw-ring-color": "rgba(20,184,144,0.4)" } as React.CSSProperties;
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);

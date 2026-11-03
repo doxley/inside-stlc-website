@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   title: "AI for QA & Modern Testing",
   description:
     "Practical, responsible AI adoption for testers: AI-assisted test design, AI test strategy workshops, and clarity on where AI adds value and where human judgement remains critical.",
+  alternates: { canonical: "/ai-for-qa" },
 };
 
 const services = [

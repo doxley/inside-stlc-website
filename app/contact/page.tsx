@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   title: "Contact | Book a QA Discovery Call",
   description:
     "Book a QA discovery call with Inside STLC to discuss QA strategy, test automation capability, AI for QA or team upskilling. Sheffield, UK.",
+  alternates: { canonical: "/contact" },
 };
 
 const contactDetails: ContactDetail[] = [

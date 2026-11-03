@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import ResourceCard from "@/components/ResourceCard";
 import PageHero from "@/components/PageHero";
-import { freeResources } from "@/lib/data";
+import { freeResources, resourceCategories } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Free QA & Software Testing Resources",
   description:
-    "Free QA guides, playbooks and roadmaps from Inside STLC — including the QA Interview Playbook, a beginner's guide to AI in QA, and a 90-day QA roadmap.",
+    "Free QA guides, checklists, roadmaps and prompt packs from Inside STLC — software tester roadmaps, Playwright interview prep, AI-for-QA prompt packs and the 5-point QA hiring framework. Instant PDF downloads, no sign-up.",
+  alternates: { canonical: "/resources" },
 };
 
 export default function ResourcesPage() {
@@ -14,36 +15,46 @@ export default function ResourcesPage() {
     <>
       <PageHero
         eyebrow="Free Resources"
-        title={<>Practical QA guides, <span className="gradient-text">at no cost</span></>}
-        subtitle="Guides, playbooks and roadmaps to help you grow as a tester or improve your team's QA approach — drawn from real-world experience, not theory."
+        title={<>Practical QA guides, <span className="gradient-text">free to download</span></>}
+        subtitle="Roadmaps, checklists, cheat sheets and prompt packs to help you grow as a tester or sharpen your team's QA — drawn from 26+ years of real-world testing, not theory. No sign-up: just download."
       />
 
-      <section className="px-4 py-16">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {freeResources.map((r) => (
-              <ResourceCard key={r.title} {...r} />
-            ))}
-          </div>
+      <section className="px-4 pb-16">
+        <div className="max-w-6xl mx-auto space-y-16">
+          {resourceCategories.map((category) => {
+            const items = freeResources.filter((r) => r.category === category);
+            if (items.length === 0) return null;
+            return (
+              <div key={category}>
+                <div className="flex items-center gap-3 mb-6">
+                  <h2 className="text-xl font-bold text-white">{category}</h2>
+                  <span className="hairline flex-1 mt-1" />
+                  <span className="text-sm text-dim">{items.length}</span>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                  {items.map((r) => (
+                    <ResourceCard key={r.title} {...r} />
+                  ))}
+                </div>
+              </div>
+            );
+          })}
 
-          {/* Email capture */}
-          <div className="panel-glow mt-12 p-8 sm:p-10 text-center">
+          {/* Newsletter / subscribe */}
+          <div className="panel-glow p-8 sm:p-10 text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Get new resources first</h2>
             <p className="text-muted mb-7 max-w-md mx-auto">
               New guides, checklists and templates are added regularly. Subscribe
-              to get them as soon as they&apos;re published.
+              to get them — plus practical QA tips — straight to your inbox.
             </p>
-            {/* TODO: wire up to email provider (Mailchimp, ConvertKit, Resend, etc.) */}
-            <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="your@email.com"
-                className="flex-1 px-4 py-3 rounded-lg text-sm bg-white/5 border border-line text-white placeholder:text-dim focus:outline-none focus:border-blue-400"
-              />
-              <button type="submit" className="btn-primary justify-center whitespace-nowrap">
-                Subscribe
-              </button>
-            </form>
+            <a
+              href="https://inside-stlc.kit.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
+              Subscribe for updates
+            </a>
             <p className="text-xs text-dim mt-3">No spam. Unsubscribe any time.</p>
           </div>
         </div>
