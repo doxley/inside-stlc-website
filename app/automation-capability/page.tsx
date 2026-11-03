@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   title: "Test Automation Capability",
   description:
     "Build sustainable test automation capability: automation discovery and assessment, tooling and framework recommendations, roadmap, pilot framework and coaching for internal testers and developers.",
+  alternates: { canonical: "/automation-capability" },
 };
 
 const services = [

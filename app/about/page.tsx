@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Globe2, PlayCircle, ArrowUpRight, CheckCircle2 } from "lucide-react";
+import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
+import { LinkedInIcon, YouTubeIcon } from "@/components/SocialIcons";
 
 const ACADEMY_URL = "https://www.insidestlcacademy.com/";
 const LINKEDIN_URL = "https://www.linkedin.com/in/davidoxley-qa/";
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   title: "About David Oxley | QA Consultant & Educator",
   description:
     "Inside STLC is led by David Oxley, with 26+ years in software testing, QA leadership, hiring, coaching and building sustainable QA capability for delivery teams.",
+  alternates: { canonical: "/about" },
 };
 
 const experience = [
@@ -45,11 +47,11 @@ export default function AboutPage() {
             <div className="flex gap-3 mb-7">
               <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm text-muted hover:text-white transition-colors">
-                <Globe2 size={18} /> LinkedIn
+                <LinkedInIcon size={18} /> LinkedIn
               </a>
               <a href={YOUTUBE_URL} target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm text-muted hover:text-white transition-colors">
-                <PlayCircle size={18} /> YouTube
+                <YouTubeIcon size={18} /> YouTube
               </a>
             </div>
             <div className="space-y-4 text-muted leading-relaxed">

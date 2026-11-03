@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { Globe2, PlayCircle, Mail, ArrowUpRight } from "lucide-react";
+import { Mail, ArrowUpRight } from "lucide-react";
+import Logo from "@/components/Logo";
+import { LinkedInIcon, YouTubeIcon } from "@/components/SocialIcons";
 
 const ACADEMY_URL = "https://www.insidestlcacademy.com/";
 const YOUTUBE_URL = "https://www.youtube.com/channel/UCWDqPmDOlZm_tPOBasv4OWA";
@@ -12,10 +14,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           {/* Brand */}
           <div className="md:col-span-5">
-            <span className="text-lg font-bold tracking-tight text-white">
-              Inside <span className="gradient-text">STLC</span>
-            </span>
-            <p className="mt-3 text-sm font-medium text-dim">
+            <Logo href={null} />
+            <p className="mt-3 text-sm font-semibold" style={{ color: "var(--gold)" }}>
+              Test Smarter. Grow Faster.
+            </p>
+            <p className="mt-2 text-sm font-medium text-dim">
               QA Consulting&nbsp;&nbsp;|&nbsp;&nbsp;Test Automation&nbsp;&nbsp;|&nbsp;&nbsp;AI for QA&nbsp;&nbsp;|&nbsp;&nbsp;Training
             </p>
             <p className="mt-4 text-sm leading-relaxed max-w-sm">
@@ -26,11 +29,11 @@ export default function Footer() {
             <div className="flex gap-3 mt-5">
               <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
                 className="icon-tile w-10 h-10 transition-colors">
-                <Globe2 size={18} />
+                <LinkedInIcon size={18} />
               </a>
               <a href={YOUTUBE_URL} target="_blank" rel="noopener noreferrer" aria-label="YouTube"
                 className="icon-tile w-10 h-10 transition-colors">
-                <PlayCircle size={18} />
+                <YouTubeIcon size={18} />
               </a>
               <a href="mailto:david.oxley@insidestlc.com" aria-label="Email"
                 className="icon-tile w-10 h-10 transition-colors">

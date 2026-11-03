@@ -1,0 +1,13 @@
+# Keep binary assets from being line-ending converted (prevents corruption).
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.webp binary
+*.woff binary
+*.woff2 binary
+
+# Normalise line endings for text/source files.
+* text=auto eol=lf

@@ -4,6 +4,7 @@ import PageHero from "@/components/PageHero";
 export const metadata: Metadata = {
   title: "Legal Notice",
   description: "Legal information and terms for the Inside STLC website.",
+  alternates: { canonical: "/legal" },
 };
 
 export default function LegalPage() {

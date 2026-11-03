@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   title: "QA & Test Strategy Consulting",
   description:
     "Risk-led QA and test strategy consulting: testing maturity reviews, QA process improvement, team capability assessment, delivery risk reduction and quality ownership across teams.",
+  alternates: { canonical: "/consulting" },
 };
 
 const capabilities = [

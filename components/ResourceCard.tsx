@@ -3,17 +3,18 @@ import { Download, FileText } from "lucide-react";
 interface ResourceCardProps {
   title: string;
   description: string;
-  href: string;
+  file: string;
   badge?: string;
+  size?: string;
 }
 
 export default function ResourceCard({
   title,
   description,
-  href,
+  file,
   badge,
+  size,
 }: ResourceCardProps) {
-  const external = href.startsWith("http");
   return (
     <div className="card flex flex-col">
       <div className="flex items-center justify-between mb-4">
@@ -25,13 +26,12 @@ export default function ResourceCard({
       <h3 className="font-semibold text-white text-base mb-2">{title}</h3>
       <p className="text-muted text-sm flex-1 leading-relaxed mb-5">{description}</p>
       <a
-        href={href}
-        target={external ? "_blank" : undefined}
-        rel={external ? "noopener noreferrer" : undefined}
+        href={file}
+        download
         className="btn-outline btn-sm justify-center"
       >
         <Download size={14} />
-        Get it free
+        Download PDF{size ? ` · ${size}` : ""}
       </a>
     </div>
   );
