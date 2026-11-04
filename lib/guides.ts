@@ -630,6 +630,547 @@ export const GUIDES: Guide[] = [
     },
     relatedSlugs: ['playwright-interview-questions', 'how-to-become-a-software-tester'],
   },
+
+  // ------------------------------------------------------------------
+  {
+    slug: 'what-is-software-testing',
+    category: 'Fundamentals',
+    title: 'What Is Software Testing? A Beginner’s Guide for 2026',
+    metaTitle: 'What Is Software Testing? A Beginner’s Guide (2026)',
+    description:
+      'A clear, beginner-friendly explanation of software testing — what it is, what testers actually do, manual vs automation, the testing lifecycle, and how to get your first QA job in 2026.',
+    readTime: '8 min read',
+    updated: '2026',
+    intro: [
+      'Software testing is one of the best entry points into tech — but the industry is changing quickly. AI tools, automation and rising expectations mean testers today need more than definitions. This guide explains what software testing actually is, in plain language, and what it looks like to do it well.',
+      'If you are curious about QA, considering a career change, or working towards your first testing role in 2026, this is the grounding to start from — written from 26+ years of real-world software testing and QA leadership.',
+    ],
+    sections: [
+      {
+        heading: 'What is software testing?',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Software testing is the process of checking software to find problems before real users experience them. At its core, testing answers a few simple questions:',
+          },
+          {
+            type: 'list',
+            items: [
+              'Does the software work correctly?',
+              'Does it behave the way it is expected to?',
+              'Can users complete their tasks successfully?',
+              'What happens when things go wrong?',
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Testing exists because software built by humans will always contain mistakes. The job of QA (Quality Assurance) is not to prove software is perfect — it is to reduce risk and give the team good information about quality before release.',
+          },
+        ],
+      },
+      {
+        heading: 'What do software testers actually do?',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Testing is not just clicking buttons. The best testers think critically about how a product could fail. Day to day, a software tester might:',
+          },
+          {
+            type: 'list',
+            items: [
+              'Execute tests against an application.',
+              'Report bugs and defects clearly, with evidence.',
+              'Validate that requirements have actually been met.',
+              'Think about real user behaviour and identify edge cases.',
+              'Improve quality processes and support releases.',
+              'Collaborate closely with developers and product teams.',
+            ],
+          },
+        ],
+      },
+      {
+        heading: 'A real example: testing a login page',
+        blocks: [
+          {
+            type: 'p',
+            text: 'The quickest way to understand testing is to see how a tester thinks about something familiar. Take a simple login page — a good tester checks far more than the obvious:',
+          },
+          {
+            type: 'steps',
+            items: [
+              { label: 'Happy path', detail: 'Correct username and password lead to a successful login.' },
+              { label: 'Negative testing', detail: 'Wrong password, empty fields, or an invalid email format are handled gracefully.' },
+              { label: 'Edge cases', detail: 'Very long usernames, special characters and unexpected input do not break the page.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'That shift — from "does it work?" to "how could it fail, and who would it affect?" — is the mindset the whole career is built on.',
+          },
+        ],
+      },
+      {
+        heading: 'Manual vs automation testing',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Manual testing means a person exercises the software directly, using judgement, curiosity and exploration. Automation testing means writing code (with a tool like Playwright) to run repeatable checks quickly and consistently. They are not rivals — strong QA uses both: automation for stable, repetitive checks, and human testing for exploration, usability and anything that needs judgement. Start with manual testing; add automation once your fundamentals are solid.',
+          },
+        ],
+      },
+      {
+        heading: 'The Software Testing Lifecycle (STLC)',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Testing is not a single step at the end — it runs alongside delivery, from understanding requirements and designing tests, through execution and defect reporting, to release and feedback. Understanding this lifecycle (and how it sits inside Agile delivery) is what turns "I can find bugs" into "I can own quality across a team".',
+          },
+        ],
+      },
+      {
+        heading: 'Non-functional testing',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Functional testing asks "does it do the right thing?". Non-functional testing asks "how well does it do it?" — covering performance, security, accessibility and reliability. A page can be perfectly functional and still be too slow, insecure or unusable. Knowing both exist, and when each matters, marks you out early.',
+          },
+        ],
+      },
+      {
+        heading: 'How to get your first QA job',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Employers hire evidence, not claims. The fastest route in is to learn the fundamentals, practise them on real or demo applications, and package that practice into a small portfolio: a few well-written test cases, some clear defect reports, and a short note on what you tested and what you found. Then apply with that evidence to roles you are actually suited to — rather than sending a generic CV everywhere.',
+          },
+        ],
+      },
+    ],
+    keyTakeaways: [
+      'Testing reduces risk and informs the team — it is not about proving software is perfect.',
+      'Great testers think about how things fail and who it affects, not just whether they work.',
+      'Use manual and automation testing together; start manual, add automation later.',
+      'Employers hire evidence — a small portfolio beats a long list of claims.',
+    ],
+    faqs: [
+      {
+        q: 'What is software testing in simple terms?',
+        a: 'Software testing is checking software to find problems before real users do. It answers whether the software works correctly, behaves as expected, lets users complete their tasks, and copes when things go wrong. The goal is to reduce risk and give the team clear information about quality before release.',
+      },
+      {
+        q: 'Is software testing a good career in 2026?',
+        a: 'Yes — it remains one of the most accessible entry points into tech, and modern QA (with automation and AI) is in demand. Expectations have risen: testers are expected to think about risk, use common tools and show evidence of real practice, rather than just follow scripts. That makes it a strong career for people who think critically and communicate well.',
+      },
+      {
+        q: 'Do I need to code to be a software tester?',
+        a: 'Not to start. You can enter QA through strong manual and exploratory testing, tool fluency and clear communication. Coding (for example basic TypeScript or JavaScript with Playwright) becomes valuable once you move into automation, but it is a later step, not a prerequisite.',
+      },
+    ],
+    pdf: {
+      label: 'Software Testing Starter Pack 2026 (PDF)',
+      file: '/resources/software-testing-starter-pack-2026.pdf',
+      size: '3.9 MB',
+    },
+    cta: {
+      heading: 'Ready to go from curious to job-ready?',
+      body: 'Inside STLC Academy turns these fundamentals into a guided programme — with lessons, worked examples and a portfolio project that gets you hired.',
+      primaryLabel: 'Explore Inside STLC Academy',
+      primaryHref: 'https://www.insidestlcacademy.com/',
+      secondaryLabel: 'See all free resources',
+      secondaryHref: '/resources',
+    },
+    relatedSlugs: ['how-to-become-a-software-tester', 'how-to-write-a-test-case'],
+  },
+
+  // ------------------------------------------------------------------
+  {
+    slug: 'what-should-you-automate',
+    category: 'Automation & Playwright',
+    title: 'What Should You Automate? A Simple Test Automation Decision Framework',
+    metaTitle: 'What Should You Automate? A Test Automation Decision Framework',
+    description:
+      'A simple frequency × risk framework for deciding what is actually worth automating — which tests to automate first, what to keep manual, and a checklist to run before you write a Playwright test.',
+    readTime: '6 min read',
+    updated: '2026',
+    intro: [
+      'The most expensive automation is the test that should never have been written. Teams burn time maintaining brittle suites that automate the wrong things — not because they lack skill, but because they automate by habit rather than by decision.',
+      'Here is the simple framework I use to decide what is worth automating. Before you write a single Playwright test, answer two questions: how often will this check run, and how painful is failure?',
+    ],
+    sections: [
+      {
+        heading: 'The two questions that decide everything',
+        blocks: [
+          {
+            type: 'steps',
+            items: [
+              { label: 'Frequency', detail: 'High = it runs every sprint, regression, release or daily pipeline. Low = one-off, exploratory, rare or rapidly changing.' },
+              { label: 'Risk / pain', detail: 'High = failure blocks revenue, access, core workflows, compliance or critical data. Low = cosmetic, low-impact or easily spotted by hand.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Plot a check against those two axes and the right decision usually becomes obvious.',
+          },
+        ],
+      },
+      {
+        heading: 'The four quadrants',
+        blocks: [
+          {
+            type: 'list',
+            items: [
+              'High frequency + high risk → Automate here. These are your best candidates: critical journeys that repeat often and give fast, valuable feedback.',
+              'High frequency + low risk → Selective automation. Automate only if it saves meaningful time and is stable. Keep the suite lean.',
+              'Low frequency + high risk → Investigate first. High impact but infrequent — consider targeted automation, monitoring, or a manual release check.',
+              'Low frequency + low risk → Keep manual. Usually not worth the automation cost; explore or check it when needed.',
+            ],
+          },
+        ],
+      },
+      {
+        heading: 'Good first Playwright candidates',
+        blocks: [
+          {
+            type: 'p',
+            text: 'When you are starting out, automate the journeys that are both important and stable:',
+          },
+          {
+            type: 'list',
+            items: [
+              'Login and authentication.',
+              'Checkout and payment paths.',
+              'Account creation.',
+              'Critical permissions and access control.',
+              'Core create-read-update-delete (CRUD) journeys.',
+              'Stable regression checks you run repeatedly.',
+            ],
+          },
+        ],
+      },
+      {
+        heading: 'Usually keep manual (or explore)',
+        blocks: [
+          {
+            type: 'list',
+            items: [
+              'One-off exploratory ideas.',
+              'Rapidly changing prototypes.',
+              'Visual nuance and subjective UX.',
+              'Low-risk copy or cosmetic checks.',
+              'Rare edge cases with a high setup cost.',
+              'Anything cheaper to check manually than to maintain as code.',
+            ],
+          },
+        ],
+      },
+      {
+        heading: 'The pre-automation checklist',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Before you automate a check, make sure you can tick all of these:',
+          },
+          {
+            type: 'list',
+            items: [
+              'It repeats often.',
+              'Its failure actually matters.',
+              'The behaviour is reasonably stable.',
+              'The expected result is clear.',
+              'The test can run independently.',
+              'Automation will save more time than it costs to maintain.',
+            ],
+          },
+        ],
+      },
+      {
+        heading: 'Learn Playwright in the right order',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Do not start with framework architecture. Write one test, make it stable, add a few genuinely valuable journeys, feel the duplication and maintenance pain for yourself — and only then introduce Page Objects, test data, Git and CI/CD. The structure means more once you have felt the problem it solves.',
+          },
+          {
+            type: 'p',
+            text: 'The rule to remember: do not automate because you can. Automate because the feedback is valuable.',
+          },
+        ],
+      },
+    ],
+    keyTakeaways: [
+      'Decide what to automate by frequency × risk, not by habit.',
+      'Automate high-frequency, high-risk journeys first; keep low-value checks manual.',
+      'Run the six-point checklist before automating anything.',
+      'Learn Playwright by feeling the pain first, then adding structure.',
+    ],
+    faqs: [
+      {
+        q: 'What should you automate first in test automation?',
+        a: 'Start with checks that are both high-frequency and high-risk — login, checkout and payment, account creation, critical permissions and core CRUD journeys. These repeat often and their failure genuinely matters, so automating them gives fast, valuable feedback for the least maintenance risk.',
+      },
+      {
+        q: 'What should not be automated?',
+        a: 'Avoid automating one-off exploratory ideas, rapidly changing prototypes, subjective UX and visual nuance, low-risk cosmetic checks, and rare edge cases with high setup cost. If something is cheaper to check manually than to maintain as code, keep it manual.',
+      },
+      {
+        q: 'How do I decide whether a test is worth automating?',
+        a: 'Use a simple frequency × risk judgement, then a checklist: does it repeat often, does its failure matter, is the behaviour stable, is the expected result clear, can it run independently, and will automation save more time than it costs to maintain? If you cannot tick those, think twice.',
+      },
+    ],
+    pdf: {
+      label: 'Automation Decision Checklist 2026 (PDF)',
+      file: '/resources/automation-decision-checklist-2026.pdf',
+      size: '29 KB',
+    },
+    cta: {
+      heading: 'Automate the right things, sustainably',
+      body: 'Inside STLC helps teams build automation capability that pays off — deciding what is worth automating, then building a lean, reliable Playwright suite your team can own.',
+      primaryLabel: 'See Test Automation Capability',
+      primaryHref: '/automation-capability',
+      secondaryLabel: 'Read: Playwright interview questions',
+      secondaryHref: '/guides/playwright-interview-questions',
+    },
+    relatedSlugs: ['playwright-interview-questions', 'ai-prompts-for-qa-engineers'],
+  },
+
+  // ------------------------------------------------------------------
+  {
+    slug: 'what-qa-hiring-managers-look-for',
+    category: 'Interview & Hiring',
+    title: 'What QA Hiring Managers Look For: A 5-Point Framework',
+    metaTitle: 'What QA Hiring Managers Look For (5-Point Framework)',
+    description:
+      'The five things a hiring manager of 25+ years actually looks for in a QA interview — curiosity, business impact, communication, judgement and a thinking mindset — with red flags, green flags and how to prepare.',
+    readTime: '8 min read',
+    updated: '2026',
+    intro: [
+      'Most candidates I rejected passed the technical screening. They knew the tools. They had the certificates. What they did not have was what this framework measures. Over 25+ years of hiring and building QA teams, I used the same five lenses in every interview to answer one question: do I want this person on my team?',
+      'None of these five points requires another certification or five more years of experience. They require a shift in how you think about your work — and how you talk about it. Here is the framework, with the red flags that end interviews, the green flags that earn a yes, and how to prepare for each.',
+    ],
+    sections: [
+      {
+        heading: '1. Curiosity & preparation',
+        blocks: [
+          { type: 'p', text: 'What I was looking for: did this person come in with questions, not just answers? The strongest candidates had done their homework — they had explored the product, read the engineering blog, and noticed something specific they wanted to understand better.' },
+          { type: 'list', items: [
+            'Red flag: no questions, or only questions about salary, benefits and hours.',
+            'Red flag: generic answers that could apply to any company.',
+            'Green flag: "I noticed you recently migrated to the cloud — how did that affect your testing pipeline?"',
+            'Green flag: demonstrates they researched you, not just the role.',
+          ] },
+          { type: 'p', text: 'How to prepare: find one thing the company has shipped or published recently, and form one genuine question around it. That is it.' },
+        ],
+      },
+      {
+        heading: '2. Business impact thinking',
+        blocks: [
+          { type: 'p', text: 'What I was looking for: can this person connect testing to what the business actually cares about? Most testers report bugs. The testers I hired reported risk — what a bug would cost if it shipped, in money, trust or users.' },
+          { type: 'list', items: [
+            'Red flag: describes bugs only in technical terms (steps to reproduce, expected vs actual).',
+            'Red flag: cannot articulate the real-world impact of a defect, and treats all bugs as equally important.',
+            'Green flag: "This affects ~12% of checkout users — about 3,400 transactions a month at risk."',
+            'Green flag: frames testing around revenue, retention, compliance and reputation.',
+          ] },
+          { type: 'p', text: 'How to prepare: have one story ready where you connected a testing finding to a business outcome. Use numbers if you have them.' },
+        ],
+      },
+      {
+        heading: '3. Communication',
+        blocks: [
+          { type: 'p', text: 'What I was looking for: can this person make risk understandable to anyone in the building? The best testers could walk into a room with developers, product managers and executives and adjust their language for each — without losing the substance. This is becoming more valuable in QA, not less.' },
+          { type: 'list', items: [
+            'Red flag: overly technical explanations with no ability to simplify.',
+            'Red flag: blames developers or throws colleagues under the bus.',
+            'Green flag: adapts the explanation to who is asking.',
+            'Green flag: describes handling disagreement constructively.',
+          ] },
+          { type: 'p', text: 'How to prepare: practise explaining your best testing achievement twice — once for a fellow engineer, once for a product manager who does not know what a test case is.' },
+        ],
+      },
+      {
+        heading: '4. Judgement',
+        blocks: [
+          { type: 'p', text: 'What I was looking for: do they know what not to test? When time is tight and scope is large, what do you cut, what do you keep, and can you explain why? This is the skill that separates testers I want from testers going through the motions.' },
+          { type: 'list', items: [
+            'Red flag: "I test everything" — this is not a virtue, it is an absence of judgement.',
+            'Red flag: no framework for prioritising effort, and no example of a real trade-off.',
+            'Green flag: "I asked the product owner: what are the three things that absolutely cannot break?"',
+            'Green flag: describes cutting test cases deliberately, with reasoning.',
+          ] },
+          { type: 'p', text: 'How to prepare: have a story about a difficult testing trade-off under pressure. What did you cut? What did you protect? Why?' },
+        ],
+      },
+      {
+        heading: '5. Thinking vs checking mindset',
+        blocks: [
+          { type: 'p', text: 'What I was looking for: do they think about quality, or just testing? The candidates I hired saw their job as protecting the user experience, not executing test cases. They questioned requirements and noticed when acceptance criteria missed edge cases. This is the hardest thing to measure and the most revealing.' },
+          { type: 'list', items: [
+            'Red flag: describes testing purely as following scripts or checklists.',
+            'Red flag: sees their role as "finding bugs" rather than "managing quality risk".',
+            'Green flag: "The criteria covered the happy path, but didn’t address a payment gateway timing out mid-transaction."',
+            'Green flag: talks about testing in terms of risk, user impact and systems thinking.',
+          ] },
+          { type: 'p', text: 'How to prepare: think of one moment where you went beyond what was asked — where you noticed something that was not in the test plan but mattered. That is your story.' },
+        ],
+      },
+      {
+        heading: 'Score yourself before the interview',
+        blocks: [
+          { type: 'p', text: 'Rate yourself one to five on each point, and note the specific story you would tell for it. A five means you have a compelling, specific example; a one means it is a development area. The candidates who got hired were not always the most technical or experienced — but they walked in demonstrating these five things.' },
+        ],
+      },
+    ],
+    keyTakeaways: [
+      'Technical skill gets you screened in; these five things get you hired.',
+      'Report risk, not just bugs — connect findings to business impact.',
+      'Show judgement by knowing what not to test, and communicate to any audience.',
+      'Prepare one concrete story for each of the five points.',
+    ],
+    faqs: [
+      {
+        q: 'What do QA hiring managers actually look for?',
+        a: 'Beyond tools and certificates, they look for five things: curiosity and preparation, business-impact thinking, clear communication, judgement about what not to test, and a quality-first thinking mindset rather than a checking one. Most candidates who are rejected passed the technical screen — they were missing these.',
+      },
+      {
+        q: 'How do I stand out in a QA interview?',
+        a: 'Come prepared with a genuine question about the company, frame your testing stories around business impact (ideally with numbers), explain risk clearly to any audience, show you can prioritise and cut test effort deliberately, and give an example of noticing something that was not in the test plan but mattered.',
+      },
+      {
+        q: 'Do I need more certifications to get hired in QA?',
+        a: 'Usually not. None of the five things hiring managers look for require another certification or more years of experience — they require a shift in how you think about and talk about your work. A compelling, specific story for each point does more than an extra badge on your CV.',
+      },
+    ],
+    pdf: {
+      label: 'The 5-Point QA Hiring Framework (PDF)',
+      file: '/resources/5-point-qa-hiring-framework.pdf',
+      size: '209 KB',
+    },
+    cta: {
+      heading: 'Prepare for your QA interview with confidence',
+      body: 'Inside STLC Academy includes targeted interview preparation — what interviewers really look for, and how to tell your story with evidence.',
+      primaryLabel: 'Explore the Academy',
+      primaryHref: 'https://www.insidestlcacademy.com/',
+      secondaryLabel: 'Read: Playwright interview questions',
+      secondaryHref: '/guides/playwright-interview-questions',
+    },
+    relatedSlugs: ['playwright-interview-questions', 'how-to-become-a-software-tester'],
+  },
+
+  // ------------------------------------------------------------------
+  {
+    slug: 'how-to-write-a-test-case',
+    category: 'Fundamentals',
+    title: 'How to Write a Good Test Case (With Examples)',
+    metaTitle: 'How to Write a Good Test Case (With Examples)',
+    description:
+      'A practical guide to writing clear, useful test cases — the seven parts of a strong test case, a worked example, the beginner mistakes to avoid, and how to think like a tester.',
+    readTime: '6 min read',
+    updated: '2026',
+    intro: [
+      'A test case is a documented set of actions, data and expected outcomes used to verify that a feature works correctly. Written well, test cases help a team test consistently, uncover defects and communicate clearly. Written badly, they waste everyone’s time.',
+      'This is a practical, beginner-friendly guide to writing test cases that actually earn their place — the parts that matter, a worked example, and the habits that separate useful cases from box-ticking.',
+    ],
+    sections: [
+      {
+        heading: 'Why good test cases matter',
+        blocks: [
+          { type: 'list', items: [
+            'They improve coverage of the scenarios that matter.',
+            'They reduce ambiguity between testers and developers.',
+            'They make regression testing repeatable.',
+            'They provide evidence of what was tested.',
+            'They help junior testers learn structured thinking.',
+          ] },
+        ],
+      },
+      {
+        heading: 'The 7 parts of a strong test case',
+        blocks: [
+          { type: 'steps', items: [
+            { label: 'Test Case ID', detail: 'A unique reference, such as LOGIN-001.' },
+            { label: 'Title', detail: 'A clear statement of what is being tested.' },
+            { label: 'Preconditions', detail: 'What must already be true before execution.' },
+            { label: 'Steps', detail: 'The exact actions the tester performs.' },
+            { label: 'Test Data', detail: 'The specific values used in the test.' },
+            { label: 'Expected Result', detail: 'What should happen if the system works.' },
+            { label: 'Status / Actual Result', detail: 'Pass, Fail or Blocked — plus notes on what actually happened.' },
+          ] },
+        ],
+      },
+      {
+        heading: 'A worked example',
+        blocks: [
+          { type: 'list', items: [
+            'ID: LOGIN-001',
+            'Title: Verify a user can log in with valid credentials.',
+            'Preconditions: A registered account exists.',
+            'Steps: 1) Open the login page. 2) Enter a valid email. 3) Enter the password. 4) Click Login.',
+            'Test Data: qa@test.com / Password123',
+            'Expected Result: The user is redirected to the dashboard.',
+          ] },
+          { type: 'p', text: 'Notice how little is left to interpretation. Anyone on the team could run this, get the same result, and know immediately whether it passed.' },
+        ],
+      },
+      {
+        heading: 'Beginner mistakes to avoid',
+        blocks: [
+          { type: 'list', items: [
+            'Too vague — "Check checkout works" tells no one what to actually do.',
+            'Too much detail — documenting every tiny mouse movement.',
+            'Missing the expected result, so pass or fail is a matter of opinion.',
+            'Testing too many objectives in one case.',
+            'Unclear titles that do not say what is being verified.',
+          ] },
+        ],
+      },
+      {
+        heading: 'How to think like a tester',
+        blocks: [
+          { type: 'p', text: 'Good test cases come from good questions. As you write, keep asking: what matters most to the user? What could fail? What data should I try? What result would prove success? Focus on clarity, coverage and risk — not volume.' },
+        ],
+      },
+      {
+        heading: 'Practice exercise',
+        blocks: [
+          { type: 'p', text: 'Write five test cases for a shopping basket page, covering a positive scenario, a negative scenario, a boundary case, a usability check and an error-handling case. Modern teams may use checklists, scenarios, BDD or exploratory notes instead of heavyweight cases — but clear thinking still wins, whatever the format.' },
+        ],
+      },
+    ],
+    keyTakeaways: [
+      'A strong test case has seven parts — and always a clear expected result.',
+      'Write for clarity: anyone should be able to run it and get the same result.',
+      'Avoid vagueness, over-documentation and testing several objectives at once.',
+      'Great test cases come from good questions about risk, coverage and the user.',
+    ],
+    faqs: [
+      {
+        q: 'What are the parts of a good test case?',
+        a: 'A strong test case has seven parts: a unique Test Case ID, a clear Title, Preconditions, Steps, Test Data, an Expected Result, and a Status / Actual Result. The expected result is the part beginners most often miss — without it, pass or fail becomes a matter of opinion.',
+      },
+      {
+        q: 'How do you write a test case for beginners?',
+        a: 'Start with a clear title that says what you are verifying, note any preconditions, list exact steps and the specific test data, and state the expected result. Keep each case focused on one objective, and make it clear enough that anyone could run it and get the same result.',
+      },
+      {
+        q: 'What is an example of a test case?',
+        a: 'A simple example: ID LOGIN-001, "Verify a user can log in with valid credentials"; precondition "a registered account exists"; steps to open the login page, enter a valid email and password and click Login; test data qa@test.com / Password123; expected result "the user is redirected to the dashboard".',
+      },
+    ],
+    pdf: {
+      label: 'Writing a Good Test Case Guide (PDF)',
+      file: '/resources/writing-a-good-test-case-guide.pdf',
+      size: '3.3 MB',
+    },
+    cta: {
+      heading: 'Build the fundamentals that get you hired',
+      body: 'Inside STLC Academy takes you from fundamentals like this to a portfolio of real testing work — the evidence employers actually want to see.',
+      primaryLabel: 'Explore Inside STLC Academy',
+      primaryHref: 'https://www.insidestlcacademy.com/',
+      secondaryLabel: 'Read: What is software testing?',
+      secondaryHref: '/guides/what-is-software-testing',
+    },
+    relatedSlugs: ['what-is-software-testing', 'how-to-become-a-software-tester'],
+  },
 ];
 
 export function getGuide(slug: string): Guide | undefined {
