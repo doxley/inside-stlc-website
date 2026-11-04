@@ -12,6 +12,7 @@ const navLinks = [
   { href: "/ai-for-qa", label: "AI for QA" },
   { href: "/clients", label: "Clients" },
   { href: "/academy", label: "Academy" },
+  { href: "/guides", label: "Guides" },
   { href: "/resources", label: "Resources" },
   { href: "/contact", label: "Contact" },
 ];

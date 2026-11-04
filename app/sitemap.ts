@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { GUIDES } from "@/lib/guides";
 
 const SITE = "https://www.insidestlc.com";
 
@@ -13,13 +14,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/academy", priority: 0.8, changeFrequency: "monthly" },
     { path: "/clients", priority: 0.7, changeFrequency: "monthly" },
     { path: "/resources", priority: 0.8, changeFrequency: "weekly" },
+    { path: "/guides", priority: 0.8, changeFrequency: "weekly" },
     { path: "/about", priority: 0.7, changeFrequency: "yearly" },
     { path: "/contact", priority: 0.8, changeFrequency: "yearly" },
     { path: "/privacy", priority: 0.3, changeFrequency: "yearly" },
     { path: "/legal", priority: 0.3, changeFrequency: "yearly" },
   ];
 
-  return routes.map((r) => ({
+  const guideRoutes = GUIDES.map((g) => ({
+    path: `/guides/${g.slug}`,
+    priority: 0.8,
+    changeFrequency: "monthly" as const,
+  }));
+
+  return [...routes, ...guideRoutes].map((r) => ({
     url: `${SITE}${r.path}`,
     lastModified,
     changeFrequency: r.changeFrequency,

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import ResourceCard from "@/components/ResourceCard";
 import PageHero from "@/components/PageHero";
 import { freeResources, resourceCategories } from "@/lib/data";
@@ -21,6 +23,19 @@ export default function ResourcesPage() {
 
       <section className="px-4 pb-16">
         <div className="max-w-6xl mx-auto space-y-16">
+          {/* Guides cross-link */}
+          <Link href="/guides" className="panel-glow p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center gap-3 justify-between group">
+            <div>
+              <p className="font-semibold text-white">Prefer to read online? Explore the QA guides</p>
+              <p className="text-sm text-muted mt-1">
+                In-depth articles on becoming a tester, Playwright interviews and AI for QA — each with a free download.
+              </p>
+            </div>
+            <span className="inline-flex items-center gap-1 text-sm font-semibold text-blue group-hover:gap-2 transition-all whitespace-nowrap">
+              Read the guides <ArrowRight size={14} />
+            </span>
+          </Link>
+
           {resourceCategories.map((category) => {
             const items = freeResources.filter((r) => r.category === category);
             if (items.length === 0) return null;
